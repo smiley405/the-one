@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+	user-select: none;
+}
+
+canvas,
+#root,
+#screen,
+#game-over,
+#game
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 464px;
+    height: 120px
+}
+
+canvas {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    pointer-events: auto;
+	background: transparent;
+}
+
+#game {
+    background-color: #1a2129;
+    z-index: -1;
+}
+
+#screen {
+	color: white;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+	font-size: 8px;
+}
+
+.tb-item {
+    display: flex;
+    gap: 2px;
+}
+
+.tb-icon {
+	width: 8px;
+	display: flex;
+}
+
+/* Hahaha.. borrowed this awesome css text color from https://github.com/phoboslab/underrun */
+#intro, #top-bar, #bottom-bar, #game-over, #loader, #waves {
+    color: #c80;
+    white-space: nowrap;
+    text-shadow: 0 0 7px #f70;
+    font-weight: bold;
+}
+
+#intro, #loader, #waves {
+	text-align: center;
+    padding: 30px 0;
+}
+
+#loader {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: black;
+}
+
+#waves {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: none;
+}
+
+#bottom-bar {
+	position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-size: 6px;
+    width: 100%;
+}
+
+#game-over {
+	position: absolute;
+    display: none;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.go-items {
+	padding-top: 10px;
+}
+
+#restart-text {
+    font-size: 14px;
+}
+
+.zoom {
+	transform-origin: center;
+	transform: scale(1.5);
+}
+
+.v-shake {
+  animation: vertical-shaking 0.35s infinite;
+}
+
+.h-shake {
+  animation: horizontal-shaking 0.35s infinite;
+}
+
+.n-shake {
+  animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+.s-shake {
+  animation: tilt-n-move-shaking 0.18s infinite;
+}
+
+@keyframes vertical-shaking {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(5px) }
+  50% { transform: translateY(-5px) }
+  75% { transform: translateY(5px) }
+  100% { transform: translateY(0) }
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+

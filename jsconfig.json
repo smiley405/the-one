@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"@game/*": ["./src/*"],
+			"@packages/*": ["./packages/*"]
+		},
+		"target": "es6",
+		"module": "es6",
+		"moduleResolution": "node",
+		"checkJs": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,23 @@
+{
+  "urls": [
+    "/home/rambo/Documents/workspace/js/ldjam/ldjam54/media/sounds/game-sounds.mp3"
+  ],
+  "sprite": {
+    "die": [
+      0,
+      588.5487528344672
+    ],
+    "music": [
+      2000,
+      8916.07709750567
+    ],
+    "shoot": [
+      12000,
+      138.02721088435453
+    ],
+    "slash": [
+      14000,
+      423.94557823129196
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<meta charset = "utf-8">
+<title>ld54</title>
+<meta name="viewport" content="height=device-height, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="./css/game.css">
+<body>
+    <div id="root">
+		<div id="screen">
+			<div id="game"></div>
+
+            <div id="top-bar">
+				<div id='health-item' class='tb-item'>
+					<div class='tb-icon'>
+						<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+							<path d="M17.947 2.053a5.209 5.209 0 0 0-3.793-1.53A6.414 6.414 0 0 0 10 2.311 6.482 6.482 0 0 0 5.824.5a5.2 5.2 0 0 0-3.8 1.521c-1.915 1.916-2.315 5.392.625 8.333l7 7a.5.5 0 0 0 .708 0l7-7a6.6 6.6 0 0 0 2.123-4.508 5.179 5.179 0 0 0-1.533-3.793Z"/>
+					  	</svg>
+				  	</div>
+				  	<div id='health-text'></div>
+				</div>
+
+				<div id='score'></div>
+
+				<div id='arrows-item' class='tb-item'>
+					<div class='tb-icon'>
+						<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1v12m0 0 4-4m-4 4L1 9"/>
+						</svg>
+				  	</div>
+				  	<div id='arrows-text'></div>
+				</div>
+			</div>
+
+            <div id="bottom-bar">A, D to move. K jumps. J to attack. H shoots arrows.</div>
+			<div id="intro">Click to Play</div>
+			<div id="loader">
+				<div id="loader-text">Loading...</div>
+			</div>
+			<div id="waves"></div>
+            <div id="game-over">
+				<div class="go-items" id="go-title">Game Over</div>
+				<div class="go-items" id="go-score"></div>
+				<div class="go-items" id="go-play">Click to Play</div>
+			</div>
+		</div>
+    </div>
+    <script src="./game.min.js"></script>
+</body>
