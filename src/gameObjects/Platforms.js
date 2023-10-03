@@ -11,7 +11,8 @@ export function Platforms(world) {
 	ground.name = 'ground';
 	ground.alpha = 0;
 
-	const wall1 = Rectangle(10, height, 'black', '', 0, 0, 0);
+	const wall1X = ground.x - 10;
+	const wall1 = Rectangle(10, height, 'black', '', 0, wall1X, 0);
 	wall1.name = 'wall1';
 	wall1.alpha = 1;
 
@@ -24,14 +25,14 @@ export function Platforms(world) {
 	const walls = [wall1, wall2];
 
 	const w1 = {
-		x: wall1.x,
+		x: wall1X,
 		ax: 0,
 		vx: 0,
 		speedX: 2
 	};
 
 	const w2 = {
-		x: wall2.x,
+		x: wall2X,
 		ax: 0,
 		vx: 0,
 		speedX: 2
@@ -44,8 +45,16 @@ export function Platforms(world) {
 	});
 
 	function resetWallsPos() {
-		wall1.x = ground.x - 10;
-		wall2.x = wall2X;
+		w1.x = wall1X; 
+		w1.ax = 0;
+		w1.vx = 0;
+
+		w2.x = wall2X; 
+		w2.ax = 0;
+		w2.vx = 0;
+
+		wall1.x = w1.x;
+		wall2.x = w2.x;
 	}
 
 	function moveWalls(w1Dir=1, w2Dir=-1) {
