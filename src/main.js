@@ -260,6 +260,9 @@ Boot(() => {
 
 			const title = getDivElementById('go-title');
 			title.innerHTML = 'You Win!';
+
+			const scoreUI = getDivElementById('go-score');
+			scoreUI.innerHTML = 'kills: ' + score;
 		}
 
 		function onDown() {
