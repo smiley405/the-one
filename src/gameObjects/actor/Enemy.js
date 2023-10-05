@@ -492,7 +492,7 @@ export function Enemy(options) {
 
 	function vsAttackPlayer() {
 		const player = Game.root.player;
-		if (!player || !self.attackHitArea.parent) {
+		if (!player || !self.attackHitArea.parent || !self.health) {
 			return;
 		}
 		const test = hitTest(player.body, self.attackHitArea);
