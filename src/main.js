@@ -306,7 +306,7 @@ Boot(() => {
 		function spawnEnemies() {
 			const walls = platforms.walls;
 			const pt1 = walls[0].x + walls[0].width;
-			const pt2 = walls[1].x - walls[1].width;
+			const pt2 = walls[1].x - 10;
 			const y1 = 0;
 			const y2 = walls[0].halfHeight();
 
