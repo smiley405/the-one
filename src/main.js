@@ -311,7 +311,7 @@ Boot(() => {
 			const y2 = walls[0].halfHeight();
 
 			for (let i = 0; i < enemiesInEachWaves[Game.root.wave]; i++) {
-				const randTime = randomInt(1000, 4000);
+				const randTime = randomInt(1000, 3000);
 
 				const t = Game.timer.wait({
 					time: randTime * i,
