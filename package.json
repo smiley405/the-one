@@ -1,5 +1,5 @@
 {
-  	"name": "mini-game-template",
+  	"name": "the-one",
   	"version": "1.0.0",
   	"type": "module",
   	"scripts": {
@@ -9,7 +9,7 @@
   	},
   	"repository": {
   	  	"type": "git",
-  	  	"url": "git+https://github.com/smiley405/one-punch-1000-demons.git"
+  	  	"url": "git+https://github.com/smiley405/the-one.git"
   	},
   	"author": "smiley405",
   	"license": "MIT",
@@ -30,12 +30,12 @@
   	  	"zip-a-folder": "^2.0.0"
   	},
   	"bugs": {
-  	  	"url": "https://github.com/smiley405/one-punch-1000-demons/issues"
+  	  	"url": "https://github.com/smiley405/the-one/issues"
   	},
-  	"homepage": "https://github.com/smiley405/one-punch-1000-demons#readme",
+  	"homepage": "https://github.com/smiley405/the-one#readme",
   	"devDependencies": {
   	  	"@babel/preset-env": "^7.22.15",
   	  	"esbuild-plugin-babel": "^0.2.3"
   	},
-  	"description": ""
+  	"description": "ludum dare 54 Entry"
 }
